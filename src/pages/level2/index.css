@@ -1,0 +1,21 @@
+.level2Container {
+	height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638523/pokecards/lvl2_background_qayc23.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardsContainer {
+	width: 100vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 44vw;
+	}
+}

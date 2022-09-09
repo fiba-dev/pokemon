@@ -1,0 +1,22 @@
+.level3Container {
+	height: 100vh;
+
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662744188/pokecards/nidorans_vslnvv.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cardsContainer {
+	width: 100vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 90vw;
+	}
+}

@@ -1,0 +1,27 @@
+.level6Container {
+	height: 100vh;
+
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759135/pokecards/wallpaperflare.com_wallpaper_zbnf5f.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+}
+.cardsContainer {
+	width: 100vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 90vw;
+	}
+	.level6Container {
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759135/pokecards/wallpaperflare.com_wallpaper_zbnf5f.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

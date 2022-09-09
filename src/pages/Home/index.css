@@ -1,0 +1,42 @@
+@keyframes buttonColor {
+	0% {
+	}
+	50% {
+		scale: 1.1;
+	}
+	100% {
+		scale: 1;
+	}
+}
+
+.homeContainer {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(8, 139, 254);
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638515/pokecards/home_background_gtv0s4.webp");
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-size: cover;
+}
+.pokelogo {
+	width: 50vw;
+}
+
+.buttonStart {
+	border-radius: 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 3vh;
+	font-weight: 800;
+	color: rgb(88, 88, 241);
+	background-color: rgb(255, 225, 0);
+	border: 3px solid rgb(88, 88, 241);
+	font-family: "Josefin Sans", sans-serif;
+	align-self: center;
+	justify-self: center;
+	animation: buttonColor 1.5s infinite;
+	cursor: pointer;
+}

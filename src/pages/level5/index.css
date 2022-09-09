@@ -1,0 +1,26 @@
+.level5Container {
+	height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662753116/pokecards/phantom1_butl6q.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardsContainer {
+	width: 100vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 90vw;
+	}
+	.level5Container {
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662753110/pokecards/phantom2_kgrnvk.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

@@ -1,0 +1,116 @@
+.card {
+	position: relative;
+	width: 50px;
+	height: 75px;
+	cursor: pointer;
+}
+.card_front_img {
+	width: 50px;
+	height: 75px;
+}
+
+.card_back_img {
+	height: 75px;
+}
+.mostrar {
+	position: relative;
+	width: 50px;
+	height: 75px;
+}
+
+.card_back_button {
+	background-color: transparent;
+	border: none;
+}
+.card_back {
+	transform: perspective(600px) rotateY(180deg);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+
+	box-shadow: 0 5px 10px #000;
+	background: rgba(14, 14, 14, 0.413);
+}
+.fire {
+	background-color: rgba(255, 106, 0, 0.54);
+}
+.grass {
+	background-color: rgba(16, 125, 36, 0.612);
+}
+.water {
+	background-color: rgba(29, 98, 227, 0.7);
+}
+.poison {
+	background-color: rgba(144, 29, 227, 0.7);
+}
+.bug {
+	background-color: rgba(174, 155, 11, 0.7);
+}
+.electric {
+	background-color: rgba(251, 255, 0, 0.79);
+}
+.ground {
+	background-color: rgba(239, 155, 0, 0.79);
+}
+.rock {
+	background-color: rgba(165, 93, 42, 0.913);
+}
+.fighting {
+	background-color: rgba(133, 151, 175, 0.913);
+}
+.psychic {
+	background-color: rgba(231, 62, 214, 0.605);
+}
+.ghost {
+	background-color: rgba(60, 20, 56, 0.852);
+}
+.card .card_front {
+	transform: perspective(600px) rotateY(0deg);
+	border: solid 2px black;
+	box-shadow: 0 5px 10px #000;
+}
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+
+	box-shadow: 0 5px 10px #000;
+
+	transition: 0.5s;
+}
+
+.mostrar .card_front {
+	transform: perspective(600px) rotateY(180deg);
+
+	cursor: pointer;
+}
+.mostrar .card_back {
+	transform: perspective(600px) rotateY(360deg);
+	cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+	.card {
+		position: relative;
+		width: 100px;
+		height: 150px;
+		cursor: pointer;
+	}
+	.card_front_img {
+		height: 150px;
+		width: 100px;
+	}
+	.card_back_img {
+		height: 150px;
+	}
+	.mostrar {
+		position: relative;
+		width: 100px;
+		height: 150px;
+	}
+}
