@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 // import { addPokemonToList } from "../../actions/pokemonActions";
 import { showCard, compare, win } from "../../actions/pokemonActions";
 import { ButtonContinue } from "../ui/buttons";
+import { compareCards } from "../../types";
 
 function AllCards(props) {
 	let { pokemons, game, resultsGame, winner } = useSelector(
@@ -19,8 +20,11 @@ function AllCards(props) {
 
 	// 	dispatch(addPokemonToList(pokemones));
 	// }
-	function compararPokemones(i) {
+
+	async function MostrarPokemones(i) {
 		dispatch(showCard(i));
+	}
+	async function Comparar() {
 		setTimeout(() => {
 			dispatch(compare());
 			dispatch(win());
@@ -32,7 +36,8 @@ function AllCards(props) {
 			{pokemons.map((i, index) => (
 				<PokeCards
 					onClick={() => {
-						compararPokemones(index);
+						MostrarPokemones(index);
+						Comparar();
 					}}
 					segundoClick={() => {}}
 					mostrar={i.is_default}
