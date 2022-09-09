@@ -23,12 +23,13 @@ function AllCards(props) {
 
 	async function MostrarPokemones(i) {
 		dispatch(showCard(i));
+		await Comparar();
 	}
 	async function Comparar() {
 		setTimeout(() => {
 			dispatch(compare());
 			dispatch(win());
-		}, 320);
+		}, 330);
 	}
 
 	return (
@@ -37,7 +38,6 @@ function AllCards(props) {
 				<PokeCards
 					onClick={() => {
 						MostrarPokemones(index);
-						Comparar();
 					}}
 					segundoClick={() => {}}
 					mostrar={i.is_default}
