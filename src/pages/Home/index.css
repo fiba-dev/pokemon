@@ -12,13 +12,16 @@
 	height: 100vh;
 	width: 100vw;
 	background-color: rgb(8, 139, 254);
-	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662761488/pokecards/peakpx_dtcxz1.jpg");
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662762390/pokecards/wp8155220-pokemon-gen-1-wallpapers_woylzt.jpg");
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	background-size: cover;
+	background-size: contain;
+	background-position: center;
+
+	background-color: rgb(255, 255, 255);
 }
 @media (min-width: 1080px) {
 	.homeContainer {
