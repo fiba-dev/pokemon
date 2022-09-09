@@ -1,5 +1,4 @@
 import React from "react";
-import backCard from "../../images/pokemon_back_card.png";
 
 import "./index.css";
 
@@ -48,7 +47,11 @@ function PokeCards(props) {
 			</div>
 
 			<div className="card_front face">
-				<img className="card_front_img " src={backCard} alt="BackCard" />
+				<img
+					className="card_front_img "
+					src="https://res.cloudinary.com/fiba06-dev/image/upload/v1662638529/pokecards/pokemon_back_card_ckyegm.png"
+					alt="BackCard"
+				/>
 			</div>
 		</div>
 	);

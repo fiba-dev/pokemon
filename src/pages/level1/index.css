@@ -4,7 +4,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 
 	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638521/pokecards/pokemon_background_e6d3g0.jpg");
 	background-repeat: no-repeat;
@@ -23,7 +22,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		cursor: pointer;
 
 		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638521/pokecards/pokemon_background_e6d3g0.jpg");
 		background-repeat: no-repeat;

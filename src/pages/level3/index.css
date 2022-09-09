@@ -5,7 +5,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 
 	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662744188/pokecards/nidorans_vslnvv.jpg");
 	background-repeat: no-repeat;

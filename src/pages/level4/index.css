@@ -5,7 +5,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 
 	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662745243/pokecards/abra_prr51q.png");
 	background-repeat: no-repeat;
