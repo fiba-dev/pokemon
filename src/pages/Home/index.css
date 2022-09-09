@@ -8,12 +8,11 @@
 		scale: 1;
 	}
 }
-
 .homeContainer {
 	height: 100vh;
 	width: 100vw;
 	background-color: rgb(8, 139, 254);
-	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638515/pokecards/home_background_gtv0s4.webp");
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662761488/pokecards/peakpx_dtcxz1.jpg");
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
@@ -21,6 +20,12 @@
 	justify-content: space-around;
 	background-size: cover;
 }
+@media (min-width: 1080px) {
+	.homeContainer {
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638515/pokecards/home_background_gtv0s4.webp");
+	}
+}
+
 .pokelogo {
 	width: 50vw;
 }
