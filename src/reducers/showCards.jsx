@@ -4,6 +4,7 @@ export default function showCardReduce(state = initialState, action) {
 	console.log("SOY STATE y action", state, action);
 	switch (action.type) {
 		case "showCards":
+			if (state.game.length === 2) break;
 			return {
 				...state,
 				pokemons: state.pokemons.map((i, index) => {

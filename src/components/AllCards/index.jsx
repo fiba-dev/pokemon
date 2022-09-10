@@ -20,7 +20,7 @@ function AllCards(props) {
 
 	// 	dispatch(addPokemonToList(pokemones));
 	// }
-
+	let booleano = false;
 	async function MostrarPokemones(i) {
 		dispatch(showCard(i));
 		await Comparar();
