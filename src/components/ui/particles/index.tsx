@@ -21,7 +21,7 @@ export function Particulas(props) {
 					fullScreen: {
 						zIndex: 1,
 					},
-					speed: { min: 20 },
+					speed: { min: 10 },
 					particles: {
 						number: { value: 160, density: { enable: false } },
 
@@ -98,10 +98,10 @@ export function Particulas(props) {
 							drift: 0,
 							enable: true,
 							gravity: {
-								acceleration: 9.81,
+								acceleration: 1,
 								enable: false,
 								inverse: false,
-								maxSpeed: 100,
+								maxSpeed: 5,
 							},
 							path: {
 								clamp: true,
@@ -124,7 +124,7 @@ export function Particulas(props) {
 							},
 							random: false,
 							size: false,
-							speed: 10,
+							speed: 5,
 							spin: {
 								acceleration: 0,
 								enable: false,
