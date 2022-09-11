@@ -5,9 +5,6 @@ import "./index.css";
 
 export function Particulas(props) {
 	const particlesInit = useCallback(async (engine: any) => {
-		// you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-		// starting from v2 you can add only the features you need reducing the bundle size
 		await loadFull(engine);
 	}, []);
 
@@ -18,20 +15,16 @@ export function Particulas(props) {
 		return (
 			<Particles
 				id="tsparticles"
-				init={props.play === true ? particlesInit : undefined}
+				init={particlesInit}
 				loaded={particlesLoaded}
 				options={{
 					fullScreen: {
 						zIndex: 1,
 					},
-					speed: { min: 200 },
+					speed: { min: 20 },
 					particles: {
-						number: {
-							value: 0,
-						},
-						color: {
-							value: ["#00FFFC", "#FC00FF", "#fffc00"],
-						},
+						number: { value: 160, density: { enable: false } },
+
 						shape: {
 							type: ["image"],
 							options: {
@@ -79,110 +72,73 @@ export function Particulas(props) {
 								],
 							},
 						},
-						opacity: {
-							value: 1,
-							animation: {
-								enable: true,
-								minimumValue: 0,
-								speed: 2,
-								startValue: "max",
-								destroy: "min",
-							},
-						},
-						size: {
-							value: 1,
-							random: {
-								enable: true,
-								minimumValue: 2,
-							},
-						},
-						links: {
-							enable: false,
-						},
-						life: {
-							duration: {
-								sync: true,
-								value: 5,
-							},
-							count: 1,
-						},
+						size: { value: 10, random: true },
 						move: {
+							angle: {
+								offset: 0,
+								value: 90,
+							},
+							attract: {
+								distance: 200,
+								enable: false,
+								rotate: {
+									x: 600,
+									y: 1200,
+								},
+							},
+							center: {
+								x: 50,
+								y: 50,
+								radius: 0,
+							},
+							decay: 0,
+							distance: {},
+							direction: "top",
+
+							drift: 0,
 							enable: true,
 							gravity: {
-								enable: true,
-								acceleration: 10,
+								acceleration: 9.81,
+								enable: false,
+								inverse: false,
+								maxSpeed: 100,
 							},
-							speed: {
-								min: 600,
-								max: 750,
+							path: {
+								clamp: true,
+								delay: {
+									random: {
+										enable: false,
+										minimumValue: 0,
+									},
+									value: 0,
+								},
+								enable: false,
+								options: {},
 							},
-							decay: 0.2,
-							direction: "none",
-							straight: false,
 							outModes: {
-								default: "destroy",
-								top: "none",
+								default: "out",
+								bottom: "out",
+								left: "out",
+								right: "out",
+								top: "out",
 							},
-						},
-						rotate: {
-							value: {
-								min: 0,
-								max: 360,
+							random: false,
+							size: false,
+							speed: 10,
+							spin: {
+								acceleration: 0,
+								enable: false,
 							},
-							direction: "random",
-
-							animation: {
-								enable: true,
-								speed: 300,
+							straight: false,
+							trail: {
+								enable: false,
+								length: 10,
+								fillColor: {
+									value: "#000000",
+								},
 							},
-						},
-						tilt: {
-							direction: "random",
-							enable: true,
-							move: true,
-							value: {
-								min: 0,
-								max: 360,
-							},
-							animation: {
-								enable: true,
-								speed: 60,
-							},
-						},
-						roll: {
-							darken: {
-								enable: true,
-								value: 25,
-							},
-							enable: true,
-							speed: {
-								min: 15,
-								max: 25,
-							},
-						},
-						wobble: {
-							distance: 30,
-							enable: true,
-							move: true,
-							speed: {
-								min: -15,
-								max: 15,
-							},
-						},
-					},
-					emitters: {
-						life: {
-							count: props.cant,
-							duration: 0.3,
-							delay: 0,
-						},
-						rate: {
-							delay: 0.1,
-							quantity: 150,
-						},
-						size: {
-							width: 0,
-							height: 0,
+							vibrate: false,
+							warp: true,
 						},
 					},
 				}}
