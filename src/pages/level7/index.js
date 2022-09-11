@@ -24,7 +24,11 @@ function Level7() {
 					mostrar={winner}
 					onClick={MostrarPokemones}
 					navigate={"/level1"}
-				></ButtonContinue>
+					message="Ganaste el Juego!"
+					cant={150}
+				>
+					Volver Al inicio
+				</ButtonContinue>
 			</div>
 		</div>
 	);

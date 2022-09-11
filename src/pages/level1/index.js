@@ -23,7 +23,11 @@ function Level1() {
 					mostrar={winner}
 					onClick={MostrarPokemones}
 					navigate={"/level2"}
-				></ButtonContinue>
+					message="Ganaste!"
+					cant={5}
+				>
+					Mas Pokemones
+				</ButtonContinue>
 			</div>
 		</div>
 	);

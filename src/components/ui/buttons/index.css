@@ -30,7 +30,7 @@
 
 .showWinnerWindows {
 	background-color: rgba(0, 0, 0, 0.428);
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -40,6 +40,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+}
+.showWinnerWindows h1 {
+	width: 60vw;
+	text-align: center;
 }
 .dontShowWinnerWindows {
 	display: none;

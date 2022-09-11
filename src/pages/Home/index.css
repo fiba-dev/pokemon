@@ -11,7 +11,7 @@
 .homeContainer {
 	height: 100vh;
 	width: 100vw;
-	background-color: rgb(8, 139, 254);
+
 	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662762390/pokecards/wp8155220-pokemon-gen-1-wallpapers_woylzt.jpg");
 	background-repeat: no-repeat;
 	display: flex;
@@ -26,6 +26,7 @@
 @media (min-width: 1080px) {
 	.homeContainer {
 		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638515/pokecards/home_background_gtv0s4.webp");
+		background-size: contain;
 	}
 }
 

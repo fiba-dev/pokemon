@@ -9,11 +9,16 @@
     "localforage": "^1.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-particles": "^2.2.4",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.2.4",
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
+    "tsparticles": "^2.2.4",
+    "tsparticles-engine": "^2.2.4",
+    "tsparticles-shape-confetti": "^1.14.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
