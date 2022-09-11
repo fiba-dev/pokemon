@@ -21,7 +21,7 @@ export function Particulas(props) {
 					fullScreen: {
 						zIndex: 1,
 					},
-					speed: { min: 10 },
+					speed: { min: 1 },
 					particles: {
 						number: { value: 160, density: { enable: false } },
 
