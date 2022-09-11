@@ -1,16 +1,10 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { loadConfettiShape } from "tsparticles-shape-confetti";
-
 import "./index.css";
 
 export function Particulas(props) {
-	console.log("SOY PROPSPLAY", props.play);
-
 	const particlesInit = useCallback(async (engine: any) => {
-		console.log(engine);
-
 		// you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
 		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
 		// starting from v2 you can add only the features you need reducing the bundle size
@@ -20,134 +14,179 @@ export function Particulas(props) {
 	const particlesLoaded = useCallback(async (container: any) => {
 		await console.log(container);
 	}, []);
-	return (
-		<Particles
-			id="tsparticles"
-			init={props.play === true ? particlesInit : undefined}
-			loaded={particlesLoaded}
-			options={{
-				fullScreen: {
-					zIndex: 1,
-				},
-				speed: { min: 200 },
-				particles: {
-					number: {
-						value: 0,
+	if (props.play === true) {
+		return (
+			<Particles
+				id="tsparticles"
+				init={props.play === true ? particlesInit : undefined}
+				loaded={particlesLoaded}
+				options={{
+					fullScreen: {
+						zIndex: 1,
 					},
-					color: {
-						value: ["#00FFFC", "#FC00FF", "#fffc00"],
-					},
-					shape: {
-						type: ["circle", "square"],
-						options: {},
-					},
-					opacity: {
-						value: 1,
-						animation: {
+					speed: { min: 200 },
+					particles: {
+						number: {
+							value: 0,
+						},
+						color: {
+							value: ["#00FFFC", "#FC00FF", "#fffc00"],
+						},
+						shape: {
+							type: ["image"],
+							options: {
+								image: [
+									{
+										src: "https://res.cloudinary.com/fiba06-dev/image/upload/v1662931335/pokecards/Master_Ball_3Fn_29_lqsvqe.webp",
+										width: 16,
+										height: 16,
+										particles: {
+											size: {
+												value: 10,
+											},
+										},
+									},
+									{
+										src: "https://res.cloudinary.com/fiba06-dev/image/upload/v1662931321/pokecards/Pok28Ilustraci29_vlvty7.webp",
+										width: 16,
+										height: 16,
+										particles: {
+											size: {
+												value: 10,
+											},
+										},
+									},
+									{
+										src: "https://res.cloudinary.com/fiba06-dev/image/upload/v1662931332/pokecards/Super_Ball__Ilustraci%C3%B3n_tnkslp.png",
+										width: 16,
+										height: 16,
+										particles: {
+											size: {
+												value: 10,
+											},
+										},
+									},
+									{
+										src: "https://res.cloudinary.com/fiba06-dev/image/upload/v1662931334/pokecards/Ultra_Ball_3Fn_29_l10hco.webp",
+										width: 16,
+										height: 16,
+										particles: {
+											size: {
+												value: 10,
+											},
+										},
+									},
+								],
+							},
+						},
+						opacity: {
+							value: 1,
+							animation: {
+								enable: true,
+								minimumValue: 0,
+								speed: 2,
+								startValue: "max",
+								destroy: "min",
+							},
+						},
+						size: {
+							value: 1,
+							random: {
+								enable: true,
+								minimumValue: 2,
+							},
+						},
+						links: {
+							enable: false,
+						},
+						life: {
+							duration: {
+								sync: true,
+								value: 5,
+							},
+							count: 1,
+						},
+						move: {
 							enable: true,
-							minimumValue: 0,
-							speed: 2,
-							startValue: "max",
-							destroy: "min",
+							gravity: {
+								enable: true,
+								acceleration: 10,
+							},
+							speed: {
+								min: 600,
+								max: 750,
+							},
+							decay: 0.2,
+							direction: "none",
+							straight: false,
+							outModes: {
+								default: "destroy",
+								top: "none",
+							},
 						},
-					},
-					size: {
-						value: 3,
-						random: {
-							enable: true,
-							minimumValue: 2,
-						},
-					},
-					links: {
-						enable: false,
-					},
-					life: {
-						duration: {
-							sync: true,
-							value: 5,
-						},
-						count: 1,
-					},
-					move: {
-						enable: true,
-						gravity: {
-							enable: true,
-							acceleration: 10,
-						},
-						speed: {
-							min: 600,
-							max: 750,
-						},
-						decay: 0.2,
-						direction: "none",
-						straight: false,
-						outModes: {
-							default: "destroy",
-							top: "none",
-						},
-					},
-					rotate: {
-						value: {
-							min: 0,
-							max: 360,
-						},
-						direction: "random",
+						rotate: {
+							value: {
+								min: 0,
+								max: 360,
+							},
+							direction: "random",
 
-						animation: {
+							animation: {
+								enable: true,
+								speed: 300,
+							},
+						},
+						tilt: {
+							direction: "random",
 							enable: true,
-							speed: 300,
+							move: true,
+							value: {
+								min: 0,
+								max: 360,
+							},
+							animation: {
+								enable: true,
+								speed: 60,
+							},
 						},
-					},
-					tilt: {
-						direction: "random",
-						enable: true,
-						move: true,
-						value: {
-							min: 0,
-							max: 360,
-						},
-						animation: {
+						roll: {
+							darken: {
+								enable: true,
+								value: 25,
+							},
 							enable: true,
-							speed: 60,
+							speed: {
+								min: 15,
+								max: 25,
+							},
 						},
-					},
-					roll: {
-						darken: {
+						wobble: {
+							distance: 30,
 							enable: true,
-							value: 25,
-						},
-						enable: true,
-						speed: {
-							min: 15,
-							max: 25,
-						},
-					},
-					wobble: {
-						distance: 30,
-						enable: true,
-						move: true,
-						speed: {
-							min: -15,
-							max: 15,
+							move: true,
+							speed: {
+								min: -15,
+								max: 15,
+							},
 						},
 					},
-				},
-				emitters: {
-					life: {
-						count: props.cant,
-						duration: 0.3,
-						delay: 0,
+					emitters: {
+						life: {
+							count: props.cant,
+							duration: 0.3,
+							delay: 0,
+						},
+						rate: {
+							delay: 0.1,
+							quantity: 150,
+						},
+						size: {
+							width: 0,
+							height: 0,
+						},
 					},
-					rate: {
-						delay: 0.1,
-						quantity: 150,
-					},
-					size: {
-						width: 0,
-						height: 0,
-					},
-				},
-			}}
-		/>
-	);
+				}}
+			/>
+		);
+	} else return <div></div>;
 }

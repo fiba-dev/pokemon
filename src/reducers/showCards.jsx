@@ -1,7 +1,6 @@
 const initialState = { pokemons: [], game: [], resultsGame: [], winner: false };
 
 export default function showCardReduce(state = initialState, action) {
-	console.log("SOY STATE y action", state, action);
 	switch (action.type) {
 		case "showCards":
 			if (state.game.length === 2) break;
@@ -19,7 +18,6 @@ export default function showCardReduce(state = initialState, action) {
 			};
 
 		case "addPokemons": {
-			console.log("SOY STATE en add pokemon", state);
 			return {
 				game: [],
 				resultsGame: [],
@@ -51,6 +49,7 @@ export default function showCardReduce(state = initialState, action) {
 			if (state.resultsGame.length === state.pokemons.length / 2) {
 				return { ...state, winner: true };
 			}
+			return state;
 		}
 		default:
 			return state;
