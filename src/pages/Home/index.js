@@ -1,6 +1,6 @@
 import "./index.css";
 import intro from "../../components/sounds/intro.mp3";
-import ReactHowler from "react-howler";
+import ReactAudioPlayer from "react-audio-player";
 import { useNavigate } from "react-router-dom";
 import { obtenerLista } from "../../api";
 import { useDispatch } from "react-redux";
@@ -10,6 +10,7 @@ export function Home() {
 	let music = new Audio(
 		"https://res.cloudinary.com/fiba06-dev/video/upload/v1662939710/pokecards/Pok%C3%A9mon_-_Atr%C3%A1palos_Ya_Latino_Oscar_Roa_Full_192_kbps_piyze3.mp3"
 	);
+	music.volume = 0.3;
 	// let { pokemons, game, resultsGame } = useSelector(
 	// 	(state) => state.showCardsPokemons
 	// );
@@ -19,8 +20,12 @@ export function Home() {
 		let pokemones = await obtenerLista();
 
 		dispatch(addPokemonToList(pokemones));
+		navigate("/level1");
 	}
-
+	function ControllerAudio(e) {
+		e.preventDefault();
+		console.log("SOY CONTROLLER AUDIO", e);
+	}
 	return (
 		<div className="homeContainer">
 			<div className="reproductorMusica">
@@ -54,7 +59,8 @@ export function Home() {
 			</audio> */}
 			<button
 				onClick={() => {
-					navigate("/level1");
+					music.pause();
+
 					MostrarPokemones();
 				}}
 				className="buttonStart"

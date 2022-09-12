@@ -11,7 +11,14 @@ root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<Provider store={store}>
-				<PersistGate loading={null} persistor={persistor}>
+				<PersistGate
+					loading={
+						<div>
+							<h1>CARGANDO</h1>
+						</div>
+					}
+					persistor={persistor}
+				>
 					<App />
 				</PersistGate>
 			</Provider>
