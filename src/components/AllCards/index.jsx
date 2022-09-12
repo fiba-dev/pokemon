@@ -12,7 +12,10 @@ function AllCards(props) {
 	let { pokemons, game, resultsGame, winner } = useSelector(
 		(state) => state.showCardsPokemons
 	);
-
+	let pika = new Audio(
+		"https://res.cloudinary.com/fiba06-dev/video/upload/v1662940910/pokecards/short-pika_meloboom_fiwfzq.mp3"
+	);
+	pika.volume = 0.01;
 	let dispatch = useDispatch();
 
 	// async function MostrarPokemones() {
@@ -38,6 +41,7 @@ function AllCards(props) {
 				<PokeCards
 					onClick={() => {
 						MostrarPokemones(index);
+						pika.play();
 					}}
 					segundoClick={() => {}}
 					mostrar={i.is_default}

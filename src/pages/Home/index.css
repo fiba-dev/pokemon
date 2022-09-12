@@ -8,6 +8,21 @@
 		scale: 1;
 	}
 }
+.reproductorMusica {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+.botonesMusica {
+	background-color: rgb(255, 225, 0);
+	border: solid 3px rgb(88, 88, 241);
+	width: 60px;
+	color: rgb(88, 88, 241);
+	font-size: 20px;
+	margin-left: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
 .homeContainer {
 	height: 100vh;
 	width: 100vw;
@@ -27,6 +42,11 @@
 	.homeContainer {
 		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662638515/pokecards/home_background_gtv0s4.webp");
 		background-size: contain;
+	}
+	.reproductorMusica {
+		position: absolute;
+		top: 50px;
+		right: 100px;
 	}
 }
 
