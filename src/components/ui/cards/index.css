@@ -86,11 +86,14 @@
 
 .mostrar .card_front {
 	transform: perspective(600px) rotateY(180deg);
-
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-moz-transform: perspective(600px) rotateY(180deg);
 	cursor: pointer;
 }
 .mostrar .card_back {
 	transform: perspective(600px) rotateY(360deg);
+	-ms-transform: perspective(600px) rotateY(360deg);
+	-webkit-transform: perspective(600px) rotateY(360deg);
 	cursor: pointer;
 }
 
