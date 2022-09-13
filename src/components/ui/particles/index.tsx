@@ -7,15 +7,11 @@ export function Particulas(props) {
 	const particlesInit = useCallback(async (engine: any) => {
 		await loadFull(engine);
 	}, []);
-	let winner = new Audio(
-		"https://res.cloudinary.com/fiba06-dev/video/upload/v1662941259/pokecards/pokemon-caught-rse_meloboom_wzwr3y.mp3"
-	);
+
 	const particlesLoaded = useCallback(async (container: any) => {
 		await console.log(container);
 	}, []);
 	if (props.play === true) {
-		winner.volume = 0.1;
-		winner.play();
 		return (
 			<Particles
 				id="tsparticles"
@@ -27,7 +23,7 @@ export function Particulas(props) {
 					},
 					speed: { min: 1 },
 					particles: {
-						number: { value: 160, density: { enable: false } },
+						number: { value: 60, density: { enable: false } },
 
 						shape: {
 							type: ["image"],

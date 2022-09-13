@@ -6,12 +6,14 @@
 	align-items: center;
 	justify-content: center;
 
-	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759123/pokecards/5458671_x6gsbu.jpg");
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663028204/pokecards/ghostpokem_lzZC0WNo_mk9skz.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background-size: contain;
+	background-position: bottom;
+	background-color: rgb(45 6 81 / 82%);
 }
 .cardsContainer {
+	margin-top: 30px;
 	width: 100vw;
 }
 @media (min-width: 1080px) {
@@ -19,8 +21,10 @@
 		width: 90vw;
 	}
 	.level7Container {
-		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759156/pokecards/493951_p2u7qg.jpg");
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662753110/pokecards/phantom2_kgrnvk.jpg");
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
+		background-color: black;
+		background-position: center;
 	}
 }

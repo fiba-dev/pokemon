@@ -9,6 +9,9 @@ import { Level4 } from "../pages/level4";
 import { Level5 } from "../pages/level5";
 import { Level6 } from "../pages/level6";
 import { Level7 } from "../pages/level7";
+import { Level8 } from "../pages/level8";
+import { Level9 } from "../pages/level9";
+import { Level10 } from "../pages/level10";
 export function App() {
 	return (
 		<Routes>
@@ -33,6 +36,9 @@ export function App() {
 			<Route path="/level5" element={<Level5 />} />
 			<Route path="/level6" element={<Level6 />} />
 			<Route path="/level7" element={<Level7 />} />
+			<Route path="/level8" element={<Level8 />} />
+			<Route path="/level9" element={<Level9 />} />
+			<Route path="/level10" element={<Level10 />} />
 		</Routes>
 	);
 }

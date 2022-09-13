@@ -3,17 +3,18 @@ import { ButtonContinue } from "../../components/ui/buttons";
 import { useSelector, useDispatch } from "react-redux";
 import { obtenerListaLvl4 } from "../../api";
 import { addPokemonToList } from "../../actions/pokemonActions";
-
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 
 function Level3() {
 	let { winner } = useSelector((state) => state.showCardsPokemons);
 	let dispatch = useDispatch();
-
+	const navigate = useNavigate();
 	async function MostrarPokemones() {
 		let pokemones = await obtenerListaLvl4();
 
 		dispatch(addPokemonToList(pokemones));
+		navigate("/level4");
 	}
 	return (
 		<div className="level3Container">
@@ -23,7 +24,6 @@ function Level3() {
 				<ButtonContinue
 					mostrar={winner}
 					onClick={MostrarPokemones}
-					navigate={"/level4"}
 					message="Ganaste!"
 					cant={15}
 				>

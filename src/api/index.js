@@ -48,14 +48,14 @@ export async function obtenerLista() {
 }
 export async function obtenerListaLvl2() {
 	let lista = [];
-	for (let index = 10; index < 26; index++) {
+	for (let index = 10; index <= 20; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
 			})
 		);
 	}
-	for (let index = 10; index < 26; index++) {
+	for (let index = 10; index <= 20; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
@@ -68,14 +68,14 @@ export async function obtenerListaLvl2() {
 }
 export async function obtenerListaLvl3() {
 	let lista = [];
-	for (let index = 27; index <= 51; index++) {
+	for (let index = 21; index <= 34; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
 			})
 		);
 	}
-	for (let index = 27; index <= 51; index++) {
+	for (let index = 21; index <= 34; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
@@ -88,14 +88,14 @@ export async function obtenerListaLvl3() {
 }
 export async function obtenerListaLvl4() {
 	let lista = [];
-	for (let index = 52; index <= 76; index++) {
+	for (let index = 35; index <= 49; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
 			})
 		);
 	}
-	for (let index = 52; index <= 76; index++) {
+	for (let index = 35; index <= 49; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
@@ -108,14 +108,14 @@ export async function obtenerListaLvl4() {
 }
 export async function obtenerListaLvl5() {
 	let lista = [];
-	for (let index = 77; index <= 101; index++) {
+	for (let index = 50; index <= 65; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
 			})
 		);
 	}
-	for (let index = 77; index <= 101; index++) {
+	for (let index = 50; index <= 165; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
@@ -128,14 +128,14 @@ export async function obtenerListaLvl5() {
 }
 export async function obtenerListaLvl6() {
 	let lista = [];
-	for (let index = 102; index <= 126; index++) {
+	for (let index = 66; index <= 82; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
 			})
 		);
 	}
-	for (let index = 102; index <= 126; index++) {
+	for (let index = 66; index <= 82; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
@@ -148,14 +148,102 @@ export async function obtenerListaLvl6() {
 }
 export async function obtenerListaLvl7() {
 	let lista = [];
-	for (let index = 127; index <= 151; index++) {
+	for (let index = 83; index <= 99; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;
 			})
 		);
 	}
-	for (let index = 127; index <= 151; index++) {
+	for (let index = 83; index <= 99; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+
+	shuffleArray(lista);
+	return lista;
+}
+export async function obtenerListaLvl8() {
+	let lista = [];
+	for (let index = 100; index <= 121; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 100; index <= 121; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+
+	shuffleArray(lista);
+	return lista;
+}
+export async function obtenerListaLvl9() {
+	let lista = [];
+	for (let index = 122; index <= 143; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 122; index <= 143; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+
+	shuffleArray(lista);
+	return lista;
+}
+export async function obtenerListaLvl10() {
+	let lista = [];
+	for (let index = 144; index <= 151; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 144; index <= 151; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 244; index <= 251; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 244; index <= 251; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 381; index <= 384; index++) {
+		lista.push(
+			await getOnePokemon(index).then((res) => {
+				return res;
+			})
+		);
+	}
+	for (let index = 381; index <= 384; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;

@@ -1,19 +1,20 @@
 import { AllCards } from "../../components/AllCards";
 import { ButtonContinue } from "../../components/ui/buttons";
 import { useSelector, useDispatch } from "react-redux";
-import { obtenerLista } from "../../api";
+import { obtenerListaLvl8 } from "../../api";
 import { addPokemonToList } from "../../actions/pokemonActions";
-
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 function Level7() {
 	let { winner } = useSelector((state) => state.showCardsPokemons);
 	let dispatch = useDispatch();
-
+	let navigate = useNavigate();
 	async function MostrarPokemones() {
-		let pokemones = await obtenerLista();
+		let pokemones = await obtenerListaLvl8();
 
 		dispatch(addPokemonToList(pokemones));
+		navigate("/level8");
 	}
 	return (
 		<div className="level7Container">
@@ -23,11 +24,10 @@ function Level7() {
 				<ButtonContinue
 					mostrar={winner}
 					onClick={MostrarPokemones}
-					navigate={"/level1"}
-					message="Ganaste el Juego!"
-					cant={150}
+					message="Ganaste!"
+					cant={30}
 				>
-					Volver Al inicio
+					Mas Pokemones
 				</ButtonContinue>
 			</div>
 		</div>

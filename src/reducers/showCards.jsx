@@ -1,4 +1,10 @@
-const initialState = { pokemons: [], game: [], resultsGame: [], winner: false };
+const initialState = {
+	pokemons: [],
+	game: [],
+	resultsGame: [],
+	winner: false,
+	comparations: false,
+};
 
 export default function showCardReduce(state = initialState, action) {
 	switch (action.type) {
@@ -6,6 +12,7 @@ export default function showCardReduce(state = initialState, action) {
 			if (state.game.length === 2) break;
 			return {
 				...state,
+				comparations: false,
 				pokemons: state.pokemons.map((i, index) => {
 					if (i.is_default === false) return i;
 					if (index === action.id) {
@@ -21,6 +28,7 @@ export default function showCardReduce(state = initialState, action) {
 			return {
 				game: [],
 				resultsGame: [],
+				comparations: false,
 				winner: false,
 				pokemons: action.payload,
 			};
@@ -31,6 +39,7 @@ export default function showCardReduce(state = initialState, action) {
 				? state.game[0].pokemon.id === state.game[1].pokemon.id
 					? {
 							...state,
+							comparations: true,
 							resultsGame: [...state.resultsGame, state.game[0].pokemon],
 							game: [],
 					  }

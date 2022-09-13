@@ -37,34 +37,34 @@
 	background-color: rgba(255, 106, 0, 0.54);
 }
 .grass {
-	background-color: rgba(16, 125, 36, 0.612);
+	background-color: rgba(16, 125, 36, 0.5);
 }
 .water {
-	background-color: rgba(29, 98, 227, 0.7);
+	background-color: rgba(29, 98, 227, 0.5);
 }
 .poison {
-	background-color: rgba(144, 29, 227, 0.7);
+	background-color: rgba(144, 29, 227, 0.496);
 }
 .bug {
-	background-color: rgba(174, 155, 11, 0.7);
+	background-color: rgba(174, 155, 11, 0.567);
 }
 .electric {
-	background-color: rgba(251, 255, 0, 0.79);
+	background-color: rgba(251, 255, 0, 0.587);
 }
 .ground {
-	background-color: rgba(239, 155, 0, 0.79);
+	background-color: rgba(239, 155, 0, 0.549);
 }
 .rock {
-	background-color: rgba(165, 93, 42, 0.913);
+	background-color: rgba(165, 93, 42, 0.671);
 }
 .fighting {
-	background-color: rgba(133, 151, 175, 0.913);
+	background-color: rgba(133, 151, 175, 0.655);
 }
 .psychic {
 	background-color: rgba(231, 62, 214, 0.605);
 }
 .ghost {
-	background-color: rgba(60, 20, 56, 0.852);
+	background-color: rgba(60, 20, 56, 0.585);
 }
 .card .card_front {
 	transform: perspective(600px) rotateY(0deg);

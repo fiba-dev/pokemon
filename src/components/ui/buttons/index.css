@@ -26,6 +26,7 @@
 	cursor: pointer;
 	display: flex;
 	text-align: center;
+	z-index: 5;
 }
 
 .showWinnerWindows {
@@ -51,11 +52,13 @@
 .ash {
 	height: 350px;
 	width: 180px;
+	z-index: 5;
 }
 .winnerText {
 	font-family: "Josefin Sans", sans-serif;
 	animation: textScale 1.5s infinite;
 	color: rgba(255, 242, 0, 0.984);
+	z-index: 5;
 }
 @media (min-width: 1080px) {
 	.ash {

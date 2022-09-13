@@ -6,9 +6,11 @@
 	align-items: center;
 	justify-content: center;
 
-	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662745243/pokecards/abra_prr51q.png");
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663027037/pokecards/__vulpix_pokemon_drawn_by_koma_nezumi__sample-d3554825bc8d5dd0b9c1c8f1fde55c47_veqol9.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: bottom;
+	background-size: contain;
+	background-color: rgba(250, 235, 215, 0.687);
 }
 .cardsContainer {
 	width: 100vw;
@@ -16,5 +18,19 @@
 @media (min-width: 1080px) {
 	.cardsContainer {
 		width: 90vw;
+	}
+	.level4Container {
+		height: 100vh;
+		max-height: 100vh;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663026645/pokecards/WallpaperDog-10807788_zmz3kf.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-color: rgb(0, 0, 0);
 	}
 }

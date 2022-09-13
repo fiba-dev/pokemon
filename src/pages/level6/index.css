@@ -6,10 +6,11 @@
 	align-items: center;
 	justify-content: center;
 
-	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759135/pokecards/wallpaperflare.com_wallpaper_zbnf5f.jpg");
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663027691/pokecards/d9uq5rg-87b188e7-c6aa-4b81-a946-a42f8dbe7bae_sg7jsh.png");
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right;
+	background-size: contain;
+	background-position: bottom;
+	background-color: rgba(231, 181, 223, 0.487);
 }
 .cardsContainer {
 	width: 100vw;
@@ -19,8 +20,10 @@
 		width: 90vw;
 	}
 	.level6Container {
-		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759135/pokecards/wallpaperflare.com_wallpaper_zbnf5f.jpg");
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663027753/pokecards/wp2231091-ponyta-wallpapers_drtuft.jpg");
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
+		background-color: black;
+		background-position: bottom;
 	}
 }
