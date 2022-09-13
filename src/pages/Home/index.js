@@ -37,7 +37,11 @@ export function Home() {
 							music.play();
 						}}
 					>
-						&#x23F5;
+						<img
+							className="iconos"
+							src="https://res.cloudinary.com/fiba06-dev/image/upload/v1663069458/pokecards/jugar_ztlz9i.png"
+							alt="señal de play"
+						/>
 					</button>
 					<button
 						className="botonesMusica"
@@ -45,7 +49,11 @@ export function Home() {
 							music.pause();
 						}}
 					>
-						&#x23F8;
+						<img
+							className="iconos"
+							src="https://res.cloudinary.com/fiba06-dev/image/upload/v1663069491/pokecards/pausa_1_famy9m.png"
+							alt="señal de pausa"
+						/>
 					</button>
 					<button
 						className="botonesMusica"
@@ -55,14 +63,18 @@ export function Home() {
 								"https://res.cloudinary.com/fiba06-dev/video/upload/v1662939710/pokecards/Pok%C3%A9mon_-_Atr%C3%A1palos_Ya_Latino_Oscar_Roa_Full_192_kbps_piyze3.mp3";
 						}}
 					>
-						&#x23f9;
+						<img
+							className="iconos"
+							src="https://res.cloudinary.com/fiba06-dev/image/upload/v1663069386/pokecards/parada_unj9fj.png"
+							alt="señal de stop iconos"
+						/>
 					</button>
 				</div>
 				<input
 					className="volume"
 					type={"range"}
 					defaultValue={20}
-					onChange={ControllerAudio}
+					onClick={ControllerAudio}
 				></input>
 			</div>
 

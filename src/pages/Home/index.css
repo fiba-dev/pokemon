@@ -46,13 +46,16 @@
 .botonesMusica {
 	background-color: rgb(255, 225, 0);
 	border: solid 2px rgba(88, 88, 241, 0.986);
-	width: 60px;
+
 	color: rgb(88, 88, 241);
-	font-size: 25px;
+	font-size: 12px;
 	margin-left: 5px;
 	border-radius: 10px;
 	cursor: pointer;
-	height: 30px;
+}
+.iconos {
+	height: 8px;
+	width: 8px;
 }
 .homeContainer {
 	height: 100vh;
