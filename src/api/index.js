@@ -115,7 +115,7 @@ export async function obtenerListaLvl5() {
 			})
 		);
 	}
-	for (let index = 50; index <= 165; index++) {
+	for (let index = 50; index <= 65; index++) {
 		lista.push(
 			await getOnePokemon(index).then((res) => {
 				return res;

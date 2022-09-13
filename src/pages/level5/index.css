@@ -12,7 +12,10 @@
 	background-position: bottom;
 	background-color: black;
 }
-
+.lvl5CardsContainer {
+	width: 96vw;
+	height: 70vh;
+}
 @media (min-width: 1080px) {
 	.lvl5CardsContainer {
 		width: 90vw;
