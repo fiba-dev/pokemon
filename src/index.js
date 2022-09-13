@@ -6,19 +6,13 @@ import store, { persistor } from "./store";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import { Loading } from "./components/ui/loading";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<Provider store={store}>
-				<PersistGate
-					loading={
-						<div>
-							<h1>CARGANDO</h1>
-						</div>
-					}
-					persistor={persistor}
-				>
+				<PersistGate loading={<Loading></Loading>} persistor={persistor}>
 					<App />
 				</PersistGate>
 			</Provider>
