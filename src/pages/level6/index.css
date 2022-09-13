@@ -12,9 +12,7 @@
 	background-position: bottom;
 	background-color: rgba(231, 181, 223, 0.487);
 }
-.cardsContainer {
-	width: 100vw;
-}
+
 @media (min-width: 1080px) {
 	.cardsContainer {
 		width: 90vw;

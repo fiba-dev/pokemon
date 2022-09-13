@@ -18,7 +18,6 @@ function Level1() {
 	}
 	return (
 		<div className="level1Container">
-			{" "}
 			<div className="lvl1cardsContainer">
 				<AllCards navigate={"/level2"}></AllCards>{" "}
 				<ButtonContinue

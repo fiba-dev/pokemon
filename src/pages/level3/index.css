@@ -12,9 +12,7 @@
 	background-position: center;
 	background-color: black;
 }
-.cardsContainer {
-	width: 100vw;
-}
+
 @media (min-width: 1080px) {
 	.cardsContainer {
 		width: 90vw;

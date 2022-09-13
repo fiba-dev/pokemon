@@ -11,10 +11,7 @@
 	background-size: cover;
 	background-position: center;
 }
-.cardsContainer {
-	margin-top: 30px;
-	width: 99vw;
-}
+
 @media (min-width: 1080px) {
 	.cardsContainer {
 		width: 90vw;

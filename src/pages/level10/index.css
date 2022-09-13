@@ -11,12 +11,12 @@
 	background-size: cover;
 	background-position: center;
 }
-.cardsContainer {
-	margin-top: 30px;
-	width: 100vw;
+.level10CardsContainer {
+	height: 70vh;
+	width: 98vw;
 }
 @media (min-width: 1080px) {
-	.cardsContainer {
+	.level10CardsContainer {
 		width: 90vw;
 	}
 	.level10Container {

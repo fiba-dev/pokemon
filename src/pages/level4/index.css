@@ -12,9 +12,7 @@
 	background-size: contain;
 	background-color: rgba(250, 235, 215, 0.687);
 }
-.cardsContainer {
-	width: 100vw;
-}
+
 @media (min-width: 1080px) {
 	.cardsContainer {
 		width: 90vw;

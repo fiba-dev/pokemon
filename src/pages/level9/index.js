@@ -19,7 +19,7 @@ function Level9() {
 	return (
 		<div className="level9Container">
 			{" "}
-			<div className="cardsContainer">
+			<div className="level9CardsContainer">
 				<AllCards></AllCards>{" "}
 				<ButtonContinue
 					mostrar={winner}
