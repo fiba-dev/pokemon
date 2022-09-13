@@ -1,0 +1,29 @@
+.level8Container {
+	height: 100vh;
+
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663028733/pokecards/peakpx_1_e8cwdr.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.cardsContainer {
+	margin-top: 30px;
+	width: 99vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 90vw;
+	}
+	.level8Container {
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663028489/pokecards/1920x1080-px-background-black-marowak-pokemon-1707887_fsquqq.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: black;
+		background-position: center;
+	}
+}

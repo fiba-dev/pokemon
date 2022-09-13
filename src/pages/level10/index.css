@@ -1,0 +1,29 @@
+.level10Container {
+	height: 100vh;
+
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663029495/pokecards/mewtwo-p4-1920x1080_gd2duq.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.cardsContainer {
+	margin-top: 30px;
+	width: 100vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 90vw;
+	}
+	.level10Container {
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1662759156/pokecards/493951_p2u7qg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: black;
+		background-position: center;
+	}
+}

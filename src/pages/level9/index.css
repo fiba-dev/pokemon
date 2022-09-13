@@ -1,0 +1,29 @@
+.level9Container {
+	height: 100vh;
+
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663029052/pokecards/419617_clcx1j.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.cardsContainer {
+	margin-top: 30px;
+	width: 100vw;
+}
+@media (min-width: 1080px) {
+	.cardsContainer {
+		width: 90vw;
+	}
+	.level9Container {
+		background: url("https://res.cloudinary.com/fiba06-dev/image/upload/v1663029000/pokecards/515161_u69na3.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		background-color: black;
+	}
+}
