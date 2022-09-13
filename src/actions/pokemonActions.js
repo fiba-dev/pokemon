@@ -1,4 +1,10 @@
-import { addPokemons, showCards, compareCards, winner } from "../types";
+import {
+	addPokemons,
+	showCards,
+	compareCards,
+	winner,
+	volumenGeneral,
+} from "../types";
 
 export const showCard = (pokemon) => ({
 	type: showCards,
@@ -14,3 +20,5 @@ export const compare = (e) => ({
 export const win = () => ({
 	type: winner,
 });
+
+export const setVolumenGeneral = (e) => ({ type: volumenGeneral, payload: e });

@@ -9,7 +9,7 @@ const initialState = {
 export default function showCardReduce(state = initialState, action) {
 	switch (action.type) {
 		case "showCards":
-			if (state.game.length === 2) break;
+			if (state.game.length === 2) return { ...state };
 			return {
 				...state,
 				comparations: false,
@@ -17,7 +17,6 @@ export default function showCardReduce(state = initialState, action) {
 					if (i.is_default === false) return i;
 					if (index === action.id) {
 						i.is_default = !i.is_default;
-						console.log("SOY i y state", i, state);
 						state.game.push({ pokemon: i, index: index });
 					}
 					return i;
