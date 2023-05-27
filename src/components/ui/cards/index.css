@@ -29,42 +29,54 @@
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
+	border: solid 1px rgba(151, 151, 151, 0.329);
 
-	box-shadow: 0 5px 10px #000;
-	background: rgba(14, 14, 14, 0.413);
+	/* box-shadow: 0 5px 10px #000;
+	background: rgba(14, 14, 14, 0.413); */
 }
 .fire {
-	background-color: rgba(255, 106, 0, 0.54);
+	background-color: rgba(138, 138, 138, 0.075);
+	filter: drop-shadow(0px 20px 10px rgb(192, 0, 0));
 }
 .grass {
-	background-color: rgba(16, 125, 36, 0.5);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(16, 125, 36));
 }
 .water {
-	background-color: rgba(29, 98, 227, 0.5);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(29, 98, 227));
 }
 .poison {
-	background-color: rgba(144, 29, 227, 0.496);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(144, 29, 227));
 }
 .bug {
-	background-color: rgba(174, 155, 11, 0.567);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(174, 155, 11));
 }
 .electric {
-	background-color: rgba(251, 255, 0, 0.587);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(251, 255, 0));
 }
 .ground {
-	background-color: rgba(239, 155, 0, 0.549);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(239, 155, 0));
 }
 .rock {
-	background-color: rgba(165, 93, 42, 0.671);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(165, 93, 42));
 }
 .fighting {
-	background-color: rgba(133, 151, 175, 0.655);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(133, 151, 175));
 }
 .psychic {
-	background-color: rgba(231, 62, 214, 0.605);
+	background-color: rgba(255, 106, 0, 0);
+	filter: drop-shadow(0px 20px 10px rgb(231, 62, 214));
 }
 .ghost {
 	background-color: rgba(60, 20, 56, 0.585);
+	filter: drop-shadow(0px 20px 10px rgb(60, 20, 56));
 }
 .card .card_front {
 	transform: perspective(600px) rotateY(0deg);
@@ -79,7 +91,7 @@
 	border-radius: 10px;
 	overflow: hidden;
 
-	box-shadow: 0 5px 10px #000;
+	/* box-shadow: 0 5px 10px #000; */
 
 	transition: 0.5s;
 }

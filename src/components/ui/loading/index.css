@@ -1,8 +1,74 @@
-.loading {
+.loader-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Cambia el color de fondo a un tono oscuro */
+}
+
+.loader-bar {
+	width: 200px; /* Ajusta el ancho de la barra */
+	height: 20px;
+	background-color: #ffffff;
+	border: solid 2px rgba(88, 88, 241, 0.986);
+	position: relative;
+	overflow: hidden;
+}
+
+.loader-bar::after {
+	content: "";
+	display: block;
 	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-color: rgba(0, 0, 0, 0.444);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 225, 0); /* Cambia el color de fondo a amarillo */
+	animation: fill 2s linear forwards;
+}
+
+.loader-text {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 3vh;
+	color: rgb(255, 225, 0); /* Cambia la opacidad del texto */
+	text-align: center;
+	animation: fade 3s ease-in-out infinite alternate;
+}
+
+@keyframes fill {
+	0% {
+		transform: scaleX(0);
+		transform-origin: left;
+	}
+	100% {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+@keyframes fade {
+	0% {
+		color: rgb(255, 225, 0);
+	}
+	50% {
+		color: rgb(88, 88, 241); /* Cambia la opacidad deseada */
+	}
+	100% {
+		color: rgb(255, 225, 0);
+	}
+}
+@keyframes fill {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
 }
