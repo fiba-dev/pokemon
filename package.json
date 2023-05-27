@@ -1,4 +1,7 @@
 {
+	"engines": {
+		"node": "18.14.2"
+	},
 	"name": "pokecards",
 	"version": "0.1.0",
 	"private": true,
